@@ -15,7 +15,7 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_PW }}
     - name: Building docker
-      run: docker image build . -t "${{ secrets.DOCKER_HUB_USERNAME }}"/mlsbbot:latest 
+      run: docker image build . -t "${{ secrets.DOCKER_HUB_USERNAME }}"/gapemasterswitch:latest 
 
     - name: Pushing docker to docker.io
-      run: docker push "${{ secrets.DOCKER_HUB_USERNAME }}"/mlsbbot:latest
+      run: docker push "${{ secrets.DOCKER_HUB_USERNAME }}"/gapemasterswitch:latest
